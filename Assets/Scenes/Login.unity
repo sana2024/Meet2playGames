@@ -813,7 +813,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyVersion: 1.0.0
-  MyIOSVersion: 45
+  MyIOSVersion: 46
   MyAndroidVersion: 39
   VersionCheckPanel: {fileID: 355473542}
   ThisVersion: {fileID: 1236747173}

@@ -62,8 +62,8 @@ public class Matchmaking : MonoBehaviour
 
 
     //if chess didnt connect to a real person then load AI scene
-    bool enteredWaitingPhase = false;
-    float waitingTime = 0;
+   public  bool enteredWaitingPhase = false;
+   public  float waitingTime = 0;
 
 
     //creating face personality for AI
@@ -175,7 +175,7 @@ public class Matchmaking : MonoBehaviour
 
     async void ConnectToAI()
     {
- 
+        Debug.Log("connect to ai --------------");
         matchType = "chessAI";
         PlayButton.SetActive(true);
         OponentUsername.Text = FakeAIUsername;
@@ -402,9 +402,10 @@ public class Matchmaking : MonoBehaviour
 
     public async void RemoveTicket()
     {
-        ByteBrew.NewProgressionEvent(ByteBrewProgressionTypes.Failed, "Chess", "ChessAI");
+        CancelInvoke();
         enteredWaitingPhase = false;
         waitingTime = 0;
+        ByteBrew.NewProgressionEvent(ByteBrewProgressionTypes.Failed, "Chess", "ChessAI");
         FakeAIProfile.SetActive(false);
         FindTimer = 0;
         UserProfile.instance.AddXP(-5);
