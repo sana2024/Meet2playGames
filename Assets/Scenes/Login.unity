@@ -813,8 +813,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyVersion: 1.0.0
-  MyIOSVersion: 46
-  MyAndroidVersion: 39
+  MyIOSVersion: 45
+  MyAndroidVersion: 40
   VersionCheckPanel: {fileID: 355473542}
   ThisVersion: {fileID: 1236747173}
   LatestVersion: {fileID: 2060689071}
@@ -1263,6 +1263,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed758efec250f4302b402b98874cae6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  username: 
+  email: 
+  password: 
+  signedin: 0
 --- !u!4 &811341196
 Transform:
   m_ObjectHideFlags: 0

@@ -139,10 +139,8 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 22
-  preloadedAssets:
-  - {fileID: 2248505231102221224, guid: c279aa232789d4af9b706351d01300ab, type: 2}
-  - {fileID: 11400000, guid: 38da594fd4fd048d8aa2b298ad775858, type: 2}
+  bundleVersion: 2.0.1
+  preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -166,10 +164,10 @@ PlayerSettings:
     iPhone: com.meet2play.v1.com
   buildNumber:
     Standalone: 0
-    iPhone: 70
+    iPhone: 71
     tvOS: 0
   overrideDefaultApplicationIdentifier: 1
-  AndroidBundleVersionCode: 51
+  AndroidBundleVersionCode: 52
   AndroidMinSdkVersion: 29
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
@@ -821,7 +819,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 3
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 0
