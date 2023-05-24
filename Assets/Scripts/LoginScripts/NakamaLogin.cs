@@ -5,6 +5,7 @@ using Nakama;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using ByteBrewSDK;
+using Nakama.TinyJson;
 #if UNITY_ANDROID
 using Unity.Notifications.Android;
 using UnityEngine.Android;
@@ -57,12 +58,13 @@ public class NakamaLogin : MonoBehaviour
 
         if (IsTimerIntialized == false)
         {
-            Debug.Log("first time opening app");
+ 
             PlayerPrefs.SetInt("time", 10);
         }
 
 
-        iclient = Nconnect.client();
+       // iclient = Nconnect.client();
+ 
  
         if (Instance == null)
         {
@@ -79,7 +81,7 @@ public class NakamaLogin : MonoBehaviour
         
         PlatformBtn.onClick.AddListener(()=> { gspManager.GoogleSigin(); });
 
-        Debug.Log("fi");
+ 
 #endif
 
 #if UNITY_IOS
@@ -164,7 +166,7 @@ public class NakamaLogin : MonoBehaviour
             LoadingPanel.SetActive(true);
  
             isession = await iclient.AuthenticateDeviceAsync(SystemInfo.deviceUniqueIdentifier, create: true);
-            Debug.Log("before refresh "+isession);
+ 
 
             var keepAliveIntervalSec = 30;
             isocket = Socket.From(iclient, new WebSocketAdapter(30));
@@ -177,10 +179,10 @@ public class NakamaLogin : MonoBehaviour
                 
                 
                 
-                Debug.Log("new session creaated");
+ 
                 displayName = "Player" + Random.Range(5000, 100000);
                 username = displayName;
-                avatarUrl = "https://i.pinimg.com/564x/bc/7f/80/bc7f8058b40eaf9118e762830db84e3e.jpg";
+                avatarUrl = "https://i.pinimg.com/564x/70/5e/fb/705efbcfb56e45f52636d4e9f441a369.jpg";
                 
                 try
                 {
@@ -190,12 +192,12 @@ public class NakamaLogin : MonoBehaviour
 
                     await iclient.UpdateAccountAsync(isession, username, displayName, avatarUrl, null, null, null , retryConfiguration);
                     isession = await iclient.SessionRefreshAsync(isession);
-                    Debug.Log("After Reresh 2" + isession.Username);
+ 
 
             }
                 catch (Nakama.ApiResponseException ex)
                 {
-                    Debug.Log("error in name " + ex);
+ 
                     if (ex.Message == "Username is already in use.")
                     {
                         displayName = "Player" + Random.Range(5000, 100000);
@@ -221,8 +223,9 @@ public class NakamaLogin : MonoBehaviour
                 var user = account.User;
                 displayName = user.DisplayName;
                 username = displayName;
+                Debug.Log("time " + isession.CreateTime);
                 PassData.DateAndTime = user.CreateTime.ToString().Substring(0, 10);
-                avatarUrl = "https://i.pinimg.com/564x/bc/7f/80/bc7f8058b40eaf9118e762830db84e3e.jpg";
+                avatarUrl = "https://i.pinimg.com/564x/70/5e/fb/705efbcfb56e45f52636d4e9f441a369.jpg";
                 await iclient.UpdateAccountAsync(isession, username, displayName, avatarUrl, null, null);
 
                 PassData.isocket = isocket;
@@ -296,7 +299,7 @@ public class NakamaLogin : MonoBehaviour
             ByteBrew.NewCustomEvent("LoggedIn", "type=SocialPlatform; Username=" + isession.Username + ";");
         }
 
-            Debug.Log("session created");
+ 
             isession = await iclient.SessionRefreshAsync(isession);
  
         var keepAliveIntervalSec = 30;

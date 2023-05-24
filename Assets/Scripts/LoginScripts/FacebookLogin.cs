@@ -10,7 +10,7 @@ using ByteBrewSDK;
 
 public class FacebookLogin : MonoBehaviour
 {
-    private IClient iclient;
+    public IClient iclient;
     private ISession isession;
     private ISocket isocket;
     [SerializeField] GameObject LoadingPanel;
@@ -52,10 +52,11 @@ public class FacebookLogin : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     public void Start()
     {
         
-        iclient = nConnect.client();
+     // iclient = nConnect.client();
     }
 
     public void OnfacebookInit()
@@ -63,7 +64,7 @@ public class FacebookLogin : MonoBehaviour
  
         if (FB.IsLoggedIn)
         {
-            Debug.Log("logged in ");
+ 
             var aToken = Facebook.Unity.AccessToken.CurrentAccessToken.TokenString;
             Debug.Log(aToken);
             LoginWithFacebook();
@@ -74,7 +75,7 @@ public class FacebookLogin : MonoBehaviour
         {
 
         FB.LogInWithReadPermissions(null ,LoginWithFacebook);
-            Debug.Log("logged in with permition");
+ 
         }
 
 
@@ -99,7 +100,7 @@ public class FacebookLogin : MonoBehaviour
 
             if (result.Cancelled)
             {
-                Debug.Log("login cancelled");
+ 
                 LoadingPanel.SetActive(false);
             }
             else
@@ -114,7 +115,7 @@ public class FacebookLogin : MonoBehaviour
                 isocket = Socket.From(iclient, new WebSocketAdapter(keepAliveIntervalSec));
                 await isocket.ConnectAsync(isession, true);
  
-                Debug.Log("Login with facebook was successful");
+ 
  
                 var resultfb = await iclient.GetAccountAsync(isession);
                 var user = resultfb.User;
@@ -126,8 +127,7 @@ public class FacebookLogin : MonoBehaviour
                 PassData.iClient = iclient;
                 PassData.isession = isession;
                 PassData.DateAndTime = isession.CreateTime.ToString();
-
-                Debug.Log("my avatar " + user.AvatarUrl);
+ 
 
                 ByteBrew.NewCustomEvent("Login", "type=Facebook; Username=" + isession.Username + ";");
 
@@ -165,7 +165,7 @@ public class FacebookLogin : MonoBehaviour
             LoadingPanel.SetActive(true);
             Debug.Log(5);
             FB.Mobile.RefreshCurrentAccessToken();
-            Debug.Log("refresh");
+ 
             var aToken = Facebook.Unity.AccessToken.CurrentAccessToken.TokenString;
  
             Debug.Log(aToken);
@@ -176,7 +176,7 @@ public class FacebookLogin : MonoBehaviour
                 isocket = Socket.From(iclient, new WebSocketAdapter(keepAliveIntervalSec));
                 await isocket.ConnectAsync(isession, true);
             Debug.Log(7);
-                Debug.Log("Login with facebook was successful");
+ 
 
             if (isession.Created)
             {
@@ -199,7 +199,7 @@ public class FacebookLogin : MonoBehaviour
                 PassData.isession = isession;
                 PassData.DateAndTime = isession.CreateTime.ToString();
 
-                Debug.Log("my avatar " + user.AvatarUrl);
+ 
 
 
             Debug.Log(9);

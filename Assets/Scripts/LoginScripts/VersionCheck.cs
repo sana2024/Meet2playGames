@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.RemoteConfig;
  
 using UnityEngine.UI;
-
+using Nakama;
 
 public class VersionCheck : MonoBehaviour
 {
@@ -27,7 +27,10 @@ public class VersionCheck : MonoBehaviour
     [SerializeField] Sprite GoggleSprite;
     [SerializeField] Button RedirectButton;
     [SerializeField] GameObject NoInternetPanel;
+    [SerializeField] NakamaConnection Nconnect;
+
     public static VersionCheck Instance;
+
 
     public bool IsUpToDate = false;
 
@@ -92,6 +95,9 @@ public class VersionCheck : MonoBehaviour
             Version = ConfigManager.appConfig.GetString("Version");
             IOSVersion = ConfigManager.appConfig.GetString("IOSVersion");
             AndroidVersion = ConfigManager.appConfig.GetString("AndroidVersion");
+            // we will create the user client here so we can easly change the IP of the host using remote config
+            NakamaLogin.Instance.iclient = new Client("http", ConfigManager.appConfig.GetString("Host"), 7350, "defaultkey", UnityWebRequestAdapter.Instance);
+            FacebookLogin.Instance.iclient = new Client("http", ConfigManager.appConfig.GetString("Host"), 7350, "defaultkey", UnityWebRequestAdapter.Instance);
 
 
 #if UNITY_IOS
@@ -118,7 +124,7 @@ public class VersionCheck : MonoBehaviour
 
 #if UNITY_ANDROID
 
-        ThisVersion.text = MyAndroidVersion;
+            ThisVersion.text = MyAndroidVersion;
         LatestVersion.text = AndroidVersion;
 
         if (MyAndroidVersion == AndroidVersion)

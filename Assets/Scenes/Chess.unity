@@ -4317,8 +4317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57ec02efe25fc4a509e493208f2c38f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyBackground: {fileID: 466521114145113859}
-  OpponentBackground: {fileID: 8231494258493218818}
+  MyBackground: {fileID: 466521114145113860}
+  OpponentBackground: {fileID: 8231494258493218819}
 --- !u!4 &834526264
 Transform:
   m_ObjectHideFlags: 0
@@ -17527,7 +17527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 26.999878}
+  m_AnchoredPosition: {x: 0, y: 27}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!224 &3371908051576646410

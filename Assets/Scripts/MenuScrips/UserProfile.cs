@@ -109,6 +109,9 @@ public class UserProfile : MonoBehaviour
 
         client = PassData.iClient;
         session = PassData.isession;
+        await PassData.isocket.ConnectAsync(session, true);
+
+       
 
         StartCoroutine(GetTexture());
 
@@ -120,6 +123,7 @@ public class UserProfile : MonoBehaviour
         InvokeRepeating("Storageojectcounter", 0.1f, 5);
 
         // PassData.isocket.ReceivedStreamPresence += presenceEvent => JoinedStream(presenceEvent);
+
 
         var result = await PassData.isocket.RpcAsync("join", "payload");
 

@@ -22,10 +22,7 @@ public class NakamaConnection : ScriptableObject
 
         var logger = new Nakama.UnityLogger(); // Implements Nakama.ILogger
         
-
-
-
-
+ 
         return iclient;
     }
 

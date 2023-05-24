@@ -5203,7 +5203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 163, y: -92.994}
+  m_AnchoredPosition: {x: 345, y: -92.994}
   m_SizeDelta: {x: 27.243, y: 31.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &367952700
@@ -5642,7 +5642,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Coins: 2,500'
+  m_Text: 'Coins: 100'
 --- !u!222 &378377813
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5876,7 +5876,7 @@ RectTransform:
   m_GameObject: {fileID: 408740627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1598911, y: 1.6759739, z: 1.0134386}
+  m_LocalScale: {x: 1.9880502, y: 1.5426334, z: 0.9328094}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1715796484}
@@ -5907,7 +5907,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2755f0ff7110a418c8f62e15c666c8df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5219649d6861b4e928649a9000add3af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7133,7 +7133,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Coins: 500'
+  m_Text: 'Coins: 100'
 --- !u!222 &486330845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7551,7 +7551,7 @@ RectTransform:
   m_GameObject: {fileID: 511871859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9543164, y: 1.1237, z: 1.1237}
+  m_LocalScale: {x: 2.076461, y: 1.1237, z: 1.1237}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1982411898}
@@ -12928,7 +12928,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d99f587edf7ed44ea878709da054e34f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec71cdea4dbf844b787f469df2b04bbb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16274,7 +16274,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1000
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16310,7 +16310,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1000
+          m_IntArgument: -100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -16653,7 +16653,7 @@ RectTransform:
   m_GameObject: {fileID: 1140602118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.61583203, y: 0.61583203, z: 0.61583203}
+  m_LocalScale: {x: 0.84250164, y: 0.84250164, z: 0.84250164}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1149481489}
@@ -16662,7 +16662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 974, y: -167.1}
+  m_AnchoredPosition: {x: 959, y: -142.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1140602120
@@ -17090,7 +17090,7 @@ RectTransform:
   m_GameObject: {fileID: 1149481488}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4585621, y: 1.0730222, z: 1.0730222}
+  m_LocalScale: {x: 3.4103904, y: 1.0730222, z: 1.0730222}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1140602119}
@@ -17122,7 +17122,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 0602d3aa0bfd24ea2973e7cc1b9fc101, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -17343,8 +17343,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 367952698}
   - {fileID: 1579200455}
+  - {fileID: 367952698}
   - {fileID: 1109374624}
   - {fileID: 1243825392}
   m_Father: {fileID: 2058241058}
@@ -18319,7 +18319,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2500
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -18355,7 +18355,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -2500
+          m_IntArgument: -100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -21878,7 +21878,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -3.6610107}
+  m_AnchoredPosition: {x: 0, y: -3.6609497}
   m_SizeDelta: {x: 0, y: -97.312}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1485173360
@@ -23068,7 +23068,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 341.76086, y: -92.994}
+  m_AnchoredPosition: {x: 163, y: -92.994}
   m_SizeDelta: {x: 27.243, y: 31.375}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1579200457
@@ -23122,7 +23122,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 500
+          m_IntArgument: 100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23158,7 +23158,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -500
+          m_IntArgument: -100
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -23578,7 +23578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Coins: 1000'
+  m_Text: 'Coins: 100'
 --- !u!222 &1632223295
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28061,7 +28061,7 @@ RectTransform:
   m_GameObject: {fileID: 1982411897}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 4.038125, y: 2.485, z: 2.485}
+  m_LocalScale: {x: 4.038125, y: 2.7024374, z: 2.485}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 511871860}
@@ -28070,7 +28070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 74, y: -235}
+  m_AnchoredPosition: {x: 105, y: -256}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1982411899

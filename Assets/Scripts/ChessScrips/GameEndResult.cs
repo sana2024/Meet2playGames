@@ -177,6 +177,7 @@ public class GameEndResult : MonoBehaviour
             OtherWnnerScore.text = "1";
 
             ChessTimer.Instance.gameEnded = true;
+            HelloVideoAgora.instance.OnApplicationQuit();
             Reward.SetActive(true);
             RequestDrawButton.interactable = false;
             ResultImage.sprite = DrawImage;

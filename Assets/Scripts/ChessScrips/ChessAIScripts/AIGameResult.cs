@@ -82,7 +82,7 @@ public class AIGameResult : MonoBehaviour
 
 
         StartCoroutine(GetTexture(PassData.MyURL , MyAvatar));
-        StartCoroutine(GetTexture("https://i.pinimg.com/564x/bc/7f/80/bc7f8058b40eaf9118e762830db84e3e.jpg", MyAvatar));
+        StartCoroutine(GetTexture("https://i.pinimg.com/564x/70/5e/fb/705efbcfb56e45f52636d4e9f441a369.jpg", MyAvatar));
 
     }
 

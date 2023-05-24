@@ -148,6 +148,8 @@ public class ChessUserDatas : MonoBehaviour
         }
         else
         {
+            UserProfile.instance.AddXP(0);
+            UserProfile.instance.updateWallet(0);
             WriteData(); 
         }
     }

@@ -529,8 +529,6 @@ public class Matchmaking : MonoBehaviour
         {
             LostconnectionPanel.SetActive(true);
             Debug.Log("match canceled " + ex);
-
-            iclient = Nconnect.client();
             var keepAliveIntervalSec = 30;
             //  isocket = Socket.From(iclient, new WebSocketAdapter());
             await isocket.ConnectAsync(isession, true, keepAliveIntervalSec);
